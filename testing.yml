@@ -1,2 +1,11 @@
 # fucking pipeline
 pool:
+
+
+- task: AndroidSigning@3
+  inputs:
+    apkFiles: '**/*.apk'
+
+appendCommitMessageToRunName:
+
+container:
